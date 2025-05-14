@@ -12,6 +12,7 @@
 	<artifactId>webrtc-signaling-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>webrtc-signaling-server</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -42,6 +43,13 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<!--		activate tomcat when deploying application only -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
