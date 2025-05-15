@@ -1,19 +1,18 @@
 package com.example.webrtc_signaling_server.controller;
 
 
-
 import com.example.webrtc_signaling_server.model.*;
-        import org.springframework.http.ResponseEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-        import java.util.*;
-        import java.util.concurrent.ConcurrentHashMap;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/v1/web")
-//TODO://http://localhost:9999/webrtc-signaling-server/api/v1/web
-public class SignalingController {
+@RequestMapping("/api/v1/mobile")
+//TODO://http://localhost:9999/webrtc-signaling-server/api/v1/mobile
+public class SignalingMobController {
     // Thread-safe collections for storing signaling data
     private final Map<String, Room> rooms = new ConcurrentHashMap<>();
     private final Map<String, SessionDescription> offers = new ConcurrentHashMap<>();
